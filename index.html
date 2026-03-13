@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christoph Gerhardt — Computer Vision Researcher</title>
+  <meta name="description" content="Academic homepage of Christoph Gerhardt — PhD researcher in Computer Vision, Semantic Segmentation, and 360° Image Processing at TU Ilmenau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">C. Gerhardt</a>
+    <button class="nav__toggle" aria-label="Menu" onclick="document.querySelector('.nav__links').classList.toggle('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv_gerhardt.pdf">CV (PDF)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <img src="foto_cgerhardt.jpg" alt="Christoph Gerhardt" class="hero__photo">
+  <div class="hero__info">
+    <h1>Christoph Gerhardt</h1>
+    <p class="subtitle">PhD Researcher · Computer Vision &amp; Deep Learning<br>
+      Technische Universität Ilmenau</p>
+    <ul class="hero__links">
+      <li><a href="mailto:christoph.gerhardt@tu-ilmenau.de"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://github.com/carhartt21" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://orcid.org/0009-0001-6821-7658" target="_blank"><i class="fab fa-orcid"></i> ORCID</a></li>
+      <li><a href="https://scholar.google.de/citations?user=-ak-wL4AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a></li>
+      <li><a href="https://www.webofscience.com/wos/author/record/OUK-2338-2025" target="_blank"><i class="fas fa-book-open"></i> Web of Science</a></li>
+      <li><a href="cv_gerhardt.pdf"><i class="fas fa-file-pdf"></i> CV</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== Main Content ===== -->
+<main class="container">
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section__title">About</h2>
+    <p>
+      I am a doctoral researcher in the
+      <a href="https://www.tu-ilmenau.de/en/vwdg" target="_blank">Virtual Worlds and Digital Games Group</a>
+      at <strong>Technische Universität Ilmenau</strong>, supervised by
+      <a href="https://www.tu-ilmenau.de/en/vwdg/team/wolfgang-broll" target="_blank">Prof. Dr. Wolfgang Broll</a>.
+    </p>
+    <p style="margin-top:.75rem">
+      My research focuses on <strong>comprehensive outdoor scene understanding</strong> through multi-scale neural networks.
+      I work on semantic segmentation of natural outdoor environments, 360° panoramic image analysis,
+      sky and cloud segmentation, traffic sign detection in equirectangular imagery, and
+      weather-robust perception through advanced data augmentation strategies.
+    </p>
+    <div class="tags" style="margin-top:1rem">
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Semantic Segmentation</span>
+      <span class="tag">360° Image Processing</span>
+      <span class="tag">Weather Robustness</span>
+      <span class="tag">Data Augmentation</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Outdoor Scene Understanding</span>
+      <span class="tag">Panoramic Imaging</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <h2 class="section__title">Education</h2>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">Dr.-Ing. (PhD) in Computer Science</span>
+        <span class="card__meta">2019 — 2026 (expected)</span>
+      </div>
+      <div class="card__org">Technische Universität Ilmenau · Virtual Worlds and Digital Games Group</div>
+      <div class="card__desc">
+        <em>Comprehensive Outdoor Scene Understanding Through Multi-Scale Neural Networks: From 360° Object Detection to Panoramic Segmentation and Weather-Robust Augmentation</em>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">M.Sc. Computer Engineering <span style="font-weight:400;color:var(--color-text-muted)">(Ingenieurinformatik)</span></span>
+        <span class="card__meta">2014 — 2017</span>
+      </div>
+      <div class="card__org">Technische Universität Ilmenau · Grade: 1.5 (very good)</div>
+      <div class="card__desc">Specialisation: Multimedia Information and Communication Systems</div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">B.Sc. Computer Engineering <span style="font-weight:400;color:var(--color-text-muted)">(Ingenieurinformatik)</span></span>
+        <span class="card__meta">2010 — 2014</span>
+      </div>
+      <div class="card__org">Technische Universität Ilmenau · Grade: 1.8 (good)</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <h2 class="section__title">Experience</h2>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">Research Associate</span>
+        <span class="card__meta">Feb 2019 — present</span>
+      </div>
+      <div class="card__org">Technische Universität Ilmenau · Virtual Worlds and Digital Games Group</div>
+      <div class="card__desc">
+        <ul>
+          <li>Research on neural-network-based semantic segmentation of outdoor scenes</li>
+          <li>Development of weather-robust augmentation frameworks (AWARE / SWIFT / PRISM / PROVE)</li>
+          <li>360° panoramic image analysis for traffic sign detection and sky/cloud segmentation</li>
+          <li>Co-supervision of student theses; teaching in VR/AR and computer vision</li>
+          <li>Industry collaboration with NOVASIB GmbH (TT-SIB INFOSYS® road inventory)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">Software Developer</span>
+        <span class="card__meta">Feb 2017 — Jan 2019</span>
+      </div>
+      <div class="card__org">Fraunhofer Institute for Digital Media Technology (IDMT) · Virtual Acoustics</div>
+      <div class="card__desc">Software development for spatial audio processing and rendering systems.</div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <span class="card__title">Student Research Assistant</span>
+        <span class="card__meta">Jul 2016 — Jan 2017</span>
+      </div>
+      <div class="card__org">Fraunhofer IDMT · Media Distribution and Security</div>
+    </div>
+  </section>
+
+  <!-- Selected Publications -->
+  <section class="section" id="publications">
+    <h2 class="section__title">Selected Publications</h2>
+    <p style="margin-bottom:1rem">First-author publications from my dissertation research. See the <a href="publications.html">full list</a> for all 15 publications.</p>
+
+    <ol class="pub-list">
+      <li class="pub-item">
+        <span class="authors"><strong>C. Gerhardt</strong> and W. Broll,</span>
+        <span class="title">"SkyCloud360: Sky and Cloud Segmentation in Equirectangular Images,"</span>
+        <span class="venue">Proc. 10th ICIVC,</span> Chengdu, China, 2025, pp. 48–58.
+        <span class="pub-badge pub-badge--first">1st author</span><br>
+        <a class="doi" href="https://doi.org/10.1109/ICIVC66358.2025.11200399">doi:10.1109/ICIVC66358.2025.11200399</a>
+      </li>
+      <li class="pub-item">
+        <span class="authors"><strong>C. Gerhardt</strong>, F. Weidner, and W. Broll,</span>
+        <span class="title">"SkyCloud: Neural Network-Based Sky and Cloud Segmentation from Natural Images,"</span>
+        <span class="venue">Proc. 8th ICIVC,</span> Dalian, China, 2023.
+        <span class="pub-badge pub-badge--first">1st author</span><br>
+        <a class="doi" href="https://doi.org/10.1109/ICIVC58118.2023.10270450">doi:10.1109/ICIVC58118.2023.10270450</a>
+      </li>
+      <li class="pub-item">
+        <span class="authors"><strong>C. Gerhardt</strong>, F. Weidner, and W. Broll,</span>
+        <span class="title">"OUTSIDE: Multi-Scale Semantic Segmentation of Universal Outdoor Scenes,"</span>
+        <span class="venue">Proc. IEEE 23rd MMSP,</span> Tampere, Finland, 2021, pp. 1–6.
+        <span class="pub-badge pub-badge--first">1st author</span><br>
+        <a class="doi" href="https://doi.org/10.1109/MMSP53017.2021.9733652">doi:10.1109/MMSP53017.2021.9733652</a>
+      </li>
+      <li class="pub-item">
+        <span class="authors"><strong>C. Gerhardt</strong> and W. Broll,</span>
+        <span class="title">"Neural Network-Based Traffic Sign Recognition in 360° Images for Semi-Automatic Road Maintenance Inventory,"</span>
+        <span class="venue">Proc. IEEE 23rd ITSC,</span> 2020.
+        <span class="pub-badge pub-badge--first">1st author</span><br>
+        <a class="doi" href="https://doi.org/10.1109/ITSC45102.2020.9294610">doi:10.1109/ITSC45102.2020.9294610</a>
+      </li>
+      <li class="pub-item">
+        <span class="authors"><strong>C. Gerhardt</strong>, M. M. Salman, and W. Broll,</span>
+        <span class="title">"AWARE: Augmentation for Weather-Adverse Robustness Evaluation,"</span>
+        <span class="venue">IEEE Access,</span> 2025.
+        <span class="pub-badge pub-badge--first">1st author</span>
+        <span class="pub-badge pub-badge--review">under review</span>
+      </li>
+    </ol>
+    <p style="margin-top:1rem"><a href="publications.html" class="btn btn--primary"><i class="fas fa-list"></i> All publications</a></p>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2 class="section__title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card__title">Programming</div>
+        <div class="skill-card__items">Python · C/C++/C# · Java · MATLAB/Octave · SQL</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__title">ML / Deep Learning</div>
+        <div class="skill-card__items">PyTorch · TensorFlow · Keras · scikit-learn · OpenCV · ONNX</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__title">Tools & Platforms</div>
+        <div class="skill-card__items">Git · Docker · Linux · Bash · Jupyter · W&B · Slurm · LaTeX</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__title">Languages</div>
+        <div class="skill-card__items">German (native) · English (fluent) · French (basic) · Serbian (basic)</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <p>&copy; 2025 Christoph Gerhardt · Built with vanilla HTML &amp; CSS</p>
+</footer>
+
+</body>
+</html>

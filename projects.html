@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Christoph Gerhardt</title>
+  <meta name="description" content="Open-source projects and datasets by Christoph Gerhardt — AWARE, SkyCloud360, SkyCloudNet, OUTSIDE, and 360° Object Detection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">C. Gerhardt</a>
+    <button class="nav__toggle" aria-label="Menu" onclick="document.querySelector('.nav__links').classList.toggle('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv_gerhardt.pdf">CV (PDF)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Main Content ===== -->
+<main class="container" style="padding-top: 2.5rem;">
+
+  <h1 style="font-size:1.8rem; font-weight:800; letter-spacing:-.03em; margin-bottom:.5rem;">Projects &amp; Datasets</h1>
+  <p style="color:var(--color-text-muted); margin-bottom:2rem;">
+    Open-source code, datasets, and pre-trained models from my research.
+    All projects are publicly available to support reproducibility and further research.
+  </p>
+
+  <!-- ===== Projects Grid ===== -->
+  <div class="projects-grid">
+
+    <!-- AWARE -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-cloud-sun-rain" style="color:var(--color-primary); margin-right:.3rem;"></i> AWARE
+      </div>
+      <div class="project-card__desc">
+        <strong>Augmentation for Weather-Adverse Robustness Evaluation</strong> — a comprehensive benchmark framework for evaluating
+        semantic segmentation under adverse weather conditions. Comprises three complementary pipelines:
+        <strong>SWIFT</strong> (augmentation), <strong>PRISM</strong> (generation), and <strong>PROVE</strong> (evaluation)
+        with 25 augmentation strategies.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">Weather Robustness</span>
+        <span class="tag">Data Augmentation</span>
+        <span class="tag">Benchmarking</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://carhartt21.github.io/AWARE" class="btn btn--primary"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://github.com/carhartt21/SWIFT" class="btn btn--outline"><i class="fab fa-github"></i> SWIFT</a>
+        <a href="https://github.com/carhartt21/PRISM" class="btn btn--outline"><i class="fab fa-github"></i> PRISM</a>
+        <a href="https://github.com/carhartt21/PROVE" class="btn btn--outline"><i class="fab fa-github"></i> PROVE</a>
+      </div>
+    </div>
+
+    <!-- AWACS Dataset -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-database" style="color:var(--color-primary); margin-right:.3rem;"></i> AWACS Dataset
+      </div>
+      <div class="project-card__desc">
+        Weather-balanced augmented dataset containing <strong>71,400 images</strong> generated from Cityscapes using
+        25 distinct augmentation strategies. Designed for comprehensive evaluation of segmentation model robustness
+        across diverse weather and lighting conditions.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">71,400 Images</span>
+        <span class="tag">25 Strategies</span>
+        <span class="tag">Weather-balanced</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://carhartt21.github.io/AWARE" class="btn btn--primary"><i class="fas fa-globe"></i> Project</a>
+      </div>
+    </div>
+
+    <!-- SkyCloud360 -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-panorama" style="color:var(--color-primary); margin-right:.3rem;"></i> SkyCloud360
+      </div>
+      <div class="project-card__desc">
+        Sky and cloud segmentation in <strong>equirectangular panoramic images</strong>.
+        Dataset of 600 annotated 360° images with a neural network pipeline adapted for
+        the geometric distortions inherent in equirectangular projections.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">600 Panoramic Images</span>
+        <span class="tag">Equirectangular</span>
+        <span class="tag">Segmentation</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://github.com/carhartt21/SkyCloud360" class="btn btn--primary"><i class="fab fa-github"></i> Code</a>
+        <a href="https://osf.io/a5ews" class="btn btn--outline"><i class="fas fa-database"></i> Data</a>
+        <a href="https://ieeexplore.ieee.org/document/11200399" class="btn btn--outline"><i class="fas fa-file-alt"></i> Paper</a>
+      </div>
+    </div>
+
+    <!-- SkyCloudNet -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-cloud" style="color:var(--color-primary); margin-right:.3rem;"></i> SkyCloudNet
+      </div>
+      <div class="project-card__desc">
+        Neural network for <strong>sky and cloud segmentation</strong> from standard perspective images.
+        Includes the SkyCloud dataset, trained models, and a complete training/evaluation pipeline.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">Sky Segmentation</span>
+        <span class="tag">Pre-trained Models</span>
+        <span class="tag">Perspective Images</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://github.com/carhartt21/SkyCloudNet" class="btn btn--primary"><i class="fab fa-github"></i> Code</a>
+        <a href="https://osf.io/y69ah" class="btn btn--outline"><i class="fas fa-database"></i> Data</a>
+        <a href="https://osf.io/duvkq" class="btn btn--outline"><i class="fas fa-brain"></i> Models</a>
+        <a href="https://ieeexplore.ieee.org/document/10270450" class="btn btn--outline"><i class="fas fa-file-alt"></i> Paper</a>
+      </div>
+    </div>
+
+    <!-- OUTSIDE -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-tree" style="color:var(--color-primary); margin-right:.3rem;"></i> OUTSIDE / outsideNet
+      </div>
+      <div class="project-card__desc">
+        <strong>Multi-scale semantic segmentation of universal outdoor scenes.</strong>
+        The OUTSIDE15k dataset provides 15,000 images with pixel-level annotations across
+        24 outdoor scene classes, paired with the outsideNet architecture.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">15,000 Images</span>
+        <span class="tag">24 Classes</span>
+        <span class="tag">Multi-scale</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://github.com/carhartt21/outsideNet" class="btn btn--primary"><i class="fab fa-github"></i> Code &amp; Data</a>
+        <a href="https://ieeexplore.ieee.org/document/9733652" class="btn btn--outline"><i class="fas fa-file-alt"></i> Paper</a>
+      </div>
+    </div>
+
+    <!-- 360° Object Detection -->
+    <div class="project-card">
+      <div class="project-card__title">
+        <i class="fas fa-traffic-light" style="color:var(--color-primary); margin-right:.3rem;"></i> 360° Traffic Sign Detection
+      </div>
+      <div class="project-card__desc">
+        Neural-network-based <strong>traffic sign recognition in 360° panoramic images</strong>
+        for semi-automatic road maintenance inventory.
+        Dataset of 2,500 panoramic images with annotations for 81 traffic sign classes.
+      </div>
+      <div class="tags" style="margin-top:.5rem;">
+        <span class="tag">2,500 Panoramic Images</span>
+        <span class="tag">81 Sign Classes</span>
+        <span class="tag">Object Detection</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://github.com/carhartt21/360-Object-Detection" class="btn btn--primary"><i class="fab fa-github"></i> Code</a>
+        <a href="https://osf.io/fsteu" class="btn btn--outline"><i class="fas fa-database"></i> Data</a>
+        <a href="https://ieeexplore.ieee.org/document/9294610" class="btn btn--outline"><i class="fas fa-file-alt"></i> Paper</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== Dataset Summary ===== -->
+  <section class="section" style="margin-top:2.5rem;">
+    <h2 class="section__title">At a Glance</h2>
+    <div class="skills-grid">
+      <div class="skill-card" style="text-align:center;">
+        <div style="font-size:2rem; font-weight:800; color:var(--color-primary);">6</div>
+        <div class="skill-card__title" style="margin-top:.25rem;">Projects</div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <div style="font-size:2rem; font-weight:800; color:var(--color-primary);">89k+</div>
+        <div class="skill-card__title" style="margin-top:.25rem;">Images</div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <div style="font-size:2rem; font-weight:800; color:var(--color-primary);">10+</div>
+        <div class="skill-card__title" style="margin-top:.25rem;">Repositories</div>
+      </div>
+      <div class="skill-card" style="text-align:center;">
+        <div style="font-size:2rem; font-weight:800; color:var(--color-primary);">100%</div>
+        <div class="skill-card__title" style="margin-top:.25rem;">Open Source</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <p>&copy; 2025 Christoph Gerhardt · <a href="index.html">Home</a></p>
+</footer>
+
+</body>
+</html>

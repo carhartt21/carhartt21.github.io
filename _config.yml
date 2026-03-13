@@ -1,3 +1,11 @@
-theme: jekyll-theme-minimal
-title: carhartt21 homepage
-description: Bookmark this to keep an eye on my project updates!
+# GitHub Pages does not need Jekyll when using plain HTML.
+# Disable Jekyll processing so index.html is served directly.
+exclude:
+  - "*.tex"
+  - "*.aux"
+  - "*.log"
+  - "*.out"
+  - "*.doc"
+  - data_and_certificates/
+  - links.txt
+  - publications.tex

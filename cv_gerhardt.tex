@@ -1,0 +1,263 @@
+%% cv_gerhardt.tex — Academic CV for Christoph Gerhardt
+%% Compile with: pdflatex cv_gerhardt.tex (twice for hyperlinks)
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% --- Style & Color -----------------------------------------------------------
+\moderncvstyle{banking}          % options: casual, classic, banking, oldstyle, fancy
+\moderncvcolor{blue}             % options: blue, orange, green, red, purple, grey, black
+
+% --- Page Geometry ------------------------------------------------------------
+\usepackage[scale=0.85, top=1.8cm, bottom=1.5cm]{geometry}
+\setlength{\hintscolumnwidth}{3.2cm}
+
+% --- Encoding & Fonts ---------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Additional Packages ------------------------------------------------------
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+
+% --- Personal Information -----------------------------------------------------
+\name{Christoph}{Gerhardt}
+\title{Dr.-Ing.\ Candidate — Computer Vision \& Deep Learning}
+\address{Technische Universität Ilmenau}{98693 Ilmenau, Germany}{}
+\email{christoph.gerhardt@tu-ilmenau.de}
+\homepage{carhartt21.github.io}
+\social[github]{carhartt21}
+\social[orcid]{0009-0001-6821-7658}
+\extrainfo{\href{https://scholar.google.de/citations?user=-ak-wL4AAAAJ}{Google Scholar} \quad \href{https://www.webofscience.com/wos/author/record/OUK-2338-2025}{Web of Science}}
+% \photo[80pt][0.4pt]{foto_cgerhardt}   % uncomment if photo desired
+
+% --- Helpers ------------------------------------------------------------------
+\newcommand{\doilink}[1]{\href{https://doi.org/#1}{\texttt{doi:#1}}}
+
+% ==============================================================================
+\begin{document}
+\makecvtitle
+
+% ==============================================================================
+\section{Research Interests}
+% ==============================================================================
+Computer Vision, Semantic Segmentation, 360° Image Processing,
+Weather-Robust Perception, Data Augmentation, Outdoor Scene Understanding,
+Neural Network Architectures, Object Detection, Panoramic Imaging
+
+% ==============================================================================
+\section{Education}
+% ==============================================================================
+\cventry{2019 -- 2026\,(exp.)}{Dr.-Ing.\ (PhD) in Computer Science}%
+  {Technische Universität Ilmenau}{Ilmenau, Germany}{}%
+  {Thesis: \emph{Comprehensive Outdoor Scene Understanding Through Multi-Scale Neural Networks: From 360° Object Detection to Panoramic Segmentation and Weather-Robust Augmentation}\\
+   Supervisor: Prof.\ Dr.\ rer.\ nat.\ Wolfgang Broll\\
+   Research Group: Virtual Worlds and Digital Games (VWDG)}
+
+\cventry{2014 -- 2017}{M.Sc.\ Computer Engineering (\textit{Ingenieurinformatik})}%
+  {Technische Universität Ilmenau}{Ilmenau, Germany}{\textit{Grade: 1.5 (very good)}}%
+  {Specialisation: Multimedia Information and Communication Systems\\
+   Thesis: \emph{Selektive Verschlüsselung von Gesichtern in Videodaten unter Verwendung des H.264-Standards}}
+
+\cventry{2010 -- 2014}{B.Sc.\ Computer Engineering (\textit{Ingenieurinformatik})}%
+  {Technische Universität Ilmenau}{Ilmenau, Germany}{\textit{Grade: 1.8 (good)}}%
+  {Thesis: \emph{Entwicklung eines Verfahrens zur Verbesserung von Mikrofonklassifizierung basierend auf der Analyse von Umwelteinflüssen}}
+
+\cventry{2009}{Abitur}{Gymnasium ``Am Lindenberg''}{Ilmenau, Germany}{\textit{Grade: 1.5}}{}
+
+% ==============================================================================
+\section{Professional Experience}
+% ==============================================================================
+\cventry{Feb 2019 -- present}{Research Associate (\textit{Wissenschaftlicher Mitarbeiter})}%
+  {Technische Universität Ilmenau}{Ilmenau, Germany}{}%
+  {Virtual Worlds and Digital Games Group (Prof.\ Broll)%
+   \begin{itemize}[nosep, leftmargin=1.5em]
+     \item Research on neural-network-based semantic segmentation of outdoor scenes
+     \item Development of weather-robust augmentation frameworks (AWARE / SWIFT / PRISM / PROVE)
+     \item 360° panoramic image analysis for traffic sign detection and sky/cloud segmentation
+     \item Co-supervision of student theses; teaching duties in VR/AR and computer vision
+     \item Collaboration with NOVASIB GmbH on road inventory management (TT-SIB INFOSYS®)
+   \end{itemize}}
+
+\cventry{Feb 2017 -- Jan 2019}{Software Developer}%
+  {Fraunhofer Institute for Digital Media Technology (IDMT)}{Ilmenau, Germany}{}%
+  {Group: Virtual Acoustics%
+   \begin{itemize}[nosep, leftmargin=1.5em]
+     \item Software development for spatial audio processing and rendering systems
+   \end{itemize}}
+
+\cventry{Jul 2016 -- Jan 2017}{Student Research Assistant (\textit{Hilfswiss.\ Mitarbeiter})}%
+  {Fraunhofer IDMT}{Ilmenau, Germany}{}%
+  {Group: Media Distribution and Security}
+
+% ==============================================================================
+\section{Internships}
+% ==============================================================================
+\cventry{Sep 2013 -- Jan 2014}{Research Intern}{Fraunhofer IDMT}{Ilmenau, Germany}{}%
+  {Group: Media Distribution and Security}
+\cventry{Mar 2013}{Intern}{SIOS Meßtechnik GmbH}{Ilmenau, Germany}{}{}
+\cventry{Sep -- Oct 2012}{Intern}{GPM Anlagenbau und Industrieanlagen GmbH}{Mainz, Germany}{}{}
+
+% ==============================================================================
+\section{Civic Service}
+% ==============================================================================
+\cventry{2009 -- 2010}{Voluntary Military Service (\textit{Freiwilliger Wehrdienst})}%
+  {Führungsunterstützungsbataillon 292}{Dillingen a.\,d.\ Donau, Germany}{}{}
+
+% ==============================================================================
+\section{Publications}
+% ==============================================================================
+
+\subsection{Peer-Reviewed — First Author (Dissertation-Related)}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2em, itemsep=4pt]
+
+\item \textbf{C.~Gerhardt} and W.~Broll,
+``SkyCloud360: Sky and Cloud Segmentation in Equirectangular Images,''
+in \emph{Proc.\ 10th ICIVC}, Chengdu, China, 2025, pp.~48--58.
+\doilink{10.1109/ICIVC66358.2025.11200399}.
+
+\item \textbf{C.~Gerhardt}, F.~Weidner, and W.~Broll,
+``SkyCloud: Neural Network-Based Sky and Cloud Segmentation from Natural Images,''
+in \emph{Proc.\ 8th ICIVC}, Dalian, China, 2023.
+\doilink{10.1109/ICIVC58118.2023.10270450}.
+
+\item \textbf{C.~Gerhardt}, F.~Weidner, and W.~Broll,
+``OUTSIDE: Multi-Scale Semantic Segmentation of Universal Outdoor Scenes,''
+in \emph{Proc.\ IEEE 23rd MMSP}, Tampere, Finland, 2021, pp.~1--6.
+\doilink{10.1109/MMSP53017.2021.9733652}.
+
+\item \textbf{C.~Gerhardt} and W.~Broll,
+``Neural Network-Based Traffic Sign Recognition in 360° Images for Semi-Automatic Road Maintenance Inventory,''
+in \emph{Proc.\ IEEE 23rd ITSC}, 2020, art.~no.~9294610.
+\doilink{10.1109/ITSC45102.2020.9294610}.
+
+\item \textbf{C.~Gerhardt}, M.\,M.~Salman, and W.~Broll,
+``AWARE: Augmentation for Weather-Adverse Robustness Evaluation,''
+\emph{IEEE Access}, 2025 \emph{(under review)}.
+
+\end{enumerate}
+
+\subsection{Peer-Reviewed — Co-Author}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2em, itemsep=4pt, resume]
+
+\item S.~Arévalo~Arboleda \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``Robot, Avatar, or Human: The Impact of Partner Representation and Task on the Communication Experience,''
+\emph{Proc.\ ACM CSCW}, vol.~9, art.~CSCW472, 2025.
+\doilink{10.1145/3757653}.
+
+\item E.~Makled, \textbf{C.~Gerhardt}, T.~Schwandt, F.~Weidner, and W.~Broll,
+``Evaluating Behavioral Realism in AR and VR\dots,''
+\emph{The Visual Computer}, vol.~41, no.~14, pp.~11721--11733, 2025.
+\doilink{10.1007/s00371-025-03934-5}.
+
+\item V.~Mikhailova \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``Addressing the Avatar in the Room\dots,''
+in \emph{ITAP/HCII 2025}, LNCS~15809, Springer, 2025.
+\doilink{10.1007/978-3-031-92707-2\_21}.
+
+\item V.~Mikhailova \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``Work-in-Progress: Older Adults' Experiences with an AR Communication System,''
+in \emph{Proc.\ ACM IMX}, Stockholm, Sweden, 2024.
+\doilink{10.1145/3639701.3663641}.
+
+\item E.~Makled, \textbf{C.~Gerhardt}, T.~Schwandt, F.~Weidner, and W.~Broll,
+``Investigating Behavioral Realism of Single-Point IK Animated Avatars\dots,''
+in \emph{Proc.\ Int.\ Conf.\ Cyberworlds}, Kofu, Japan, 2024, pp.~1--8.
+\doilink{10.1109/CW64301.2024.00010}.
+
+\item F.~Weidner \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``Eyes on the Narrative: Exploring the Impact of Visual Realism and Audio Presentation on Gaze Behavior in AR Storytelling,''
+in \emph{Proc.\ ACM ETRA}, Glasgow, UK, 2024.
+\doilink{10.1145/3649902.3653344}.
+
+\item V.~Mikhailova, \textbf{C.~Gerhardt} \emph{et~al.},
+``Age and Realism of Avatars in Simulated AR,''
+in \emph{Proc.\ IEEE VR}, Orlando, FL, 2024, pp.~83--93.
+\doilink{10.1109/VR58804.2024.00032}.
+
+\item S.~Arévalo~Arboleda \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``Beyond Looks: Agent Movement and Audiovisual Spatial Coherence in AR,''
+in \emph{Proc.\ IEEE VR}, Orlando, FL, 2024, pp.~502--512.
+\doilink{10.1109/VR58804.2024.00071}.
+
+\item F.~Weidner \emph{et~al.} incl.\ \textbf{C.~Gerhardt},
+``A Systematic Review on the Visualization of Avatars and Agents in AR~\&~VR,''
+\emph{IEEE Trans.\ Vis.\ Comput.\ Graphics}, vol.~29, no.~5, pp.~2596--2606, 2023.
+\doilink{10.1109/TVCG.2023.3247072}.
+
+\item \textbf{C.~Gerhardt}, P.~Aichroth, and S.~Mann,
+``Selective Face Encryption in H.264 Encoded Videos,''
+in \emph{Proc.\ IEEE VCIP}, 2017, pp.~1--4.
+\doilink{10.1109/VCIP.2017.8305040}.
+
+\end{enumerate}
+
+% ==============================================================================
+\section{Open-Source Projects \& Datasets}
+% ==============================================================================
+
+\cvitem{AWARE}{Weather-augmentation benchmark framework comprising three pipelines:
+  \textbf{SWIFT} (augmentation), \textbf{PRISM} (generation), and \textbf{PROVE} (evaluation).
+  \newline\url{https://carhartt21.github.io/AWARE}}
+
+\cvitem{AWACS}{Weather-balanced augmented dataset — 71\,400 images across
+  25 augmentation strategies for robustness evaluation.}
+
+\cvitem{SkyCloud360}{600 equirectangular panoramic images for sky and cloud segmentation.
+  \newline Code: \url{https://github.com/carhartt21/SkyCloud360}
+  \quad Data: \url{https://osf.io/a5ews}}
+
+\cvitem{SkyCloudNet}{Sky and cloud segmentation network with pre-trained models.
+  \newline Code: \url{https://github.com/carhartt21/SkyCloudNet}
+  \quad Data: \url{https://osf.io/y69ah}}
+
+\cvitem{OUTSIDE15k}{15\,000 outdoor images with 24-class pixel-level annotations.
+  \newline Code \& Data: \url{https://github.com/carhartt21/outsideNet}}
+
+\cvitem{360° Detection}{2\,500 panoramic images, 81 traffic sign classes.
+  \newline Code: \url{https://github.com/carhartt21/360-Object-Detection}
+  \quad Data: \url{https://osf.io/fsteu}}
+
+% ==============================================================================
+\section{Technical Skills}
+% ==============================================================================
+\cvitem{Languages}{Python, C/C++/C\#, Java, MATLAB/Octave, SQL/MySQL, \LaTeX}
+\cvitem{ML / DL}{PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, ONNX}
+\cvitem{Tools}{Git, Docker, Linux, Bash, Jupyter, Weights~\&~Biases, Slurm}
+\cvitem{Domains}{Semantic Segmentation, Object Detection, Image Augmentation, 360° Vision, VR/AR}
+
+% ==============================================================================
+\section{Languages}
+% ==============================================================================
+\cvitemwithcomment{German}{Native}{}
+\cvitemwithcomment{English}{Fluent (C1+)}{}
+\cvitemwithcomment{French}{Basic knowledge}{}
+\cvitemwithcomment{Serbian}{Basic knowledge}{}
+
+% ==============================================================================
+\section{Certifications}
+% ==============================================================================
+\cventry{2023}{C-Lizenz (Coaching License)}{}{}{}{}
+\cventry{}{EU Drone Pilot Certificate (A1/A3)}{}{}{}{}
+
+% ==============================================================================
+\section{Funding}
+% ==============================================================================
+\cvitem{2019 -- 2024}{Research funded by the Free State of Thuringia (Grant No.~2017\,FE\,9147),
+co-financed by the European Union under the European Regional Development Fund (ERDF).}
+
+% ==============================================================================
+\section{Academic Service}
+% ==============================================================================
+\cvitem{Teaching}{Courses in VR/AR and computer vision at TU Ilmenau}
+\cvitem{Supervision}{Co-supervision of Bachelor's and Master's theses}
+
+% ==============================================================================
+\vfill
+\begin{center}
+  \small Ilmenau, \today
+\end{center}
+
+\end{document}

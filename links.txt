@@ -1,0 +1,26 @@
+## Skyloud360
+Code: https://github.com/carhartt21/SkyCloud360
+Data: https://osf.io/a5ews
+Paper: https://ieeexplore.ieee.org/document/11200399
+
+## SkyCloud
+Code: https://github.com/carhartt21/SkyCloudNet
+Data: https://osf.io/y69ah
+Pretrained Models: https://osf.io/duvkq
+Paper: https://ieeexplore.ieee.org/document/10270450
+
+## 360° Object Detection
+Code: https://github.com/carhartt21/360-Object-Detection
+Data: https://osf.io/fsteu
+Paper: https://ieeexplore.ieee.org/document/9294610
+
+## OUTSIDE: 
+Paper: https://ieeexplore.ieee.org/document/9733652
+Code and dataset: https://github.com/carhartt21/outsideNet 
+
+## AWARE: 
+Project: https://carhartt21.github.io/AWARE
+Repositories: 
+    SWIFT: https://github.com/carhartt21/SWIFT
+    PRISM: https://github.com/carhartt21/PRISM
+    PROVE: https://github.com/carhartt21/PROVE

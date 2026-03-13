@@ -1,0 +1,13 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Keep the compiled PDF
+!cv_gerhardt.pdf
+
+# Private data
+data_and_certificates/
