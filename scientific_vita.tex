@@ -1,0 +1,326 @@
+%% scientific_vita.tex — Wissenschaftlicher Lebenslauf / Scientific Vita
+%% for dissertation submission by Christoph Gerhardt
+%% Compile: pdflatex scientific_vita.tex (twice for hyperlinks)
+\documentclass[11pt,a4paper]{article}
+
+% --- Font & Encoding ----------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}                   % Palatino — matching thesis font
+\usepackage{microtype}
+
+% --- Page Geometry (matching thesis) ------------------------------------------
+\usepackage[a4paper, margin=3cm, top=3.8cm]{geometry}
+
+% --- Spacing ------------------------------------------------------------------
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Packages -----------------------------------------------------------------
+\usepackage[inline]{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[hyphens]{url}
+\usepackage[
+  colorlinks=true,
+  linkcolor=tuilmenaugruen,
+  citecolor=tuilmenaugruen,
+  urlcolor=tuilmenaublau,
+  bookmarks=true
+]{hyperref}
+
+% --- TU Ilmenau Corporate Colors ---------------------------------------------
+\definecolor{tuilmenauorange}{HTML}{FF7900}
+\definecolor{tuilmenaublau}{HTML}{003359}
+\definecolor{tuilmenaugruen}{HTML}{00747A}
+
+% --- Title Formatting ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Large\bfseries\color{tuilmenaugruen}}
+  {}
+  {0em}
+  {}
+  [\vspace{-0.5em}\textcolor{tuilmenaugruen}{\rule{\textwidth}{0.8pt}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{tuilmenaugruen}}
+  {}
+  {0em}
+  {}
+
+% --- CV entry commands --------------------------------------------------------
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\cvline}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{3.5cm}\raggedright\textbf{#1}\end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\dimexpr\textwidth-3.8cm\relax}#2\end{minipage}%
+  \par\vspace{4pt}%
+}
+\newcommand{\cventryFull}[5]{%
+  \par\noindent
+  \begin{minipage}[t]{3.5cm}\raggedright\textbf{#1}\end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\dimexpr\textwidth-3.8cm\relax}%
+    \textbf{#2}\par #3\par\textit{#4}%
+    \ifx&#5&\else\par #5\fi
+  \end{minipage}%
+  \par\vspace{8pt}%
+}
+
+% ==============================================================================
+\begin{document}
+
+% --- Header -------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries\color{tuilmenaugruen} Scientific Vita}\\[0.3em]
+  {\large\color{tuilmenaugruen} (Wissenschaftlicher Lebenslauf)}\\[0.8em]
+  {\large Christoph Gerhardt}\\[0.3em]
+  {\normalsize born July 17, 1990 in Ilmenau, Germany}\\[1.5em]
+\end{center}
+
+% ==============================================================================
+\section*{Education}
+% ==============================================================================
+
+\cventryFull{Oct 2019 -- May 2026\newline(expected)}
+  {Dr.-Ing.\@ (PhD) in Computer Science}
+  {Technische Universit\"at Ilmenau, Faculty of Computer Science and Automation}
+  {Dissertation: ``Comprehensive Outdoor Scene Understanding Through Multi-Scale
+   Neural Networks: From 360\textdegree{} Object Detection to Panoramic
+   Segmentation and Weather-Robust Augmentation''}
+  {Supervisor: Prof.\@ Dr.\@ rer.\@ nat.\@ Wolfgang Broll\newline
+   Research Group: Virtual Worlds and Digital Games (VWDG)}
+
+\cventryFull{Oct 2014 -- Sep 2017}
+  {M.Sc.\@ Computer Engineering (Ingenieurinformatik)}
+  {Technische Universit\"at Ilmenau --- Final Grade: 1.5 (very good)}
+  {Specialisation: Multimedia Information and Communication Systems.\newline
+   Thesis: ``Selektive Verschl\"usselung von Gesichtern in Videodaten
+   unter Verwendung des H.264-Standards''}
+  {}
+
+\cventryFull{Oct 2010 -- Sep 2014}
+  {B.Sc.\@ Computer Engineering (Ingenieurinformatik)}
+  {Technische Universit\"at Ilmenau --- Final Grade: 1.8 (good)}
+  {Thesis: ``Entwicklung eines Verfahrens zur Verbesserung von
+   Mikrofonklassifizierung basierend auf der Analyse von Umwelteinfl\"ussen''}
+  {}
+
+\cventryFull{Jun 2009}
+  {Abitur}
+  {Gymnasium ``Am Lindenberg'', Ilmenau --- Grade: 1.5}
+  {}
+  {}
+
+% ==============================================================================
+\section*{Professional Experience}
+% ==============================================================================
+
+\cventryFull{Feb 2019 -- present}
+  {Research Associate (Wissenschaftlicher Mitarbeiter)}
+  {Technische Universit\"at Ilmenau, Fachgebiet Virtuelle Welten und Digitale Spiele}
+  {Doctoral research on outdoor scene understanding with neural networks;
+   development of datasets, architectures, and benchmarks; teaching; student supervision}
+  {}
+
+\cventryFull{Feb 2017 -- Jan 2019}
+  {Software Developer}
+  {Fraunhofer Institute for Digital Media Technology (IDMT), Ilmenau}
+  {Group: Virtual Acoustics --- C++ and Python development for spatial audio rendering}
+  {}
+
+\cventryFull{Jul 2016 -- Jan 2017}
+  {Student Research Assistant (Hilfswiss.\@ Mitarbeiter)}
+  {Fraunhofer IDMT, Ilmenau}
+  {Group: Media Distribution and Security --- Face detection and selective encryption in H.264 video}
+  {}
+
+% ==============================================================================
+\section*{Research Activities}
+% ==============================================================================
+
+\subsection*{Dissertation Research (2019--2026)}
+
+\noindent
+My doctoral research addresses the challenge of \textbf{comprehensive outdoor scene
+understanding} through a progression of increasingly complex perception tasks:
+
+\begin{enumerate}[nosep, leftmargin=1.5em, itemsep=4pt]
+  \item \textbf{360\textdegree{} Traffic Sign Detection} --- Adapted object detection networks
+    for equirectangular panoramic images; created a dataset of 2\,500 images with
+    81 traffic sign classes; deployed in NOVASIB GmbH's TT-SIB INFOSYS\textregistered{} road
+    inventory system (IEEE ITSC 2020).
+
+  \item \textbf{Universal Outdoor Scene Segmentation (OUTSIDE)} --- Designed a multi-scale
+    semantic segmentation architecture for unconstrained outdoor scenes; curated the
+    OUTSIDE15k dataset (15\,000 images, 24 classes) (IEEE MMSP 2021).
+
+  \item \textbf{Sky and Cloud Segmentation (SkyCloud)} --- Developed SkyCloudNet for
+    fine-grained sky and cloud segmentation from perspective images; released dataset
+    and pre-trained models (IEEE ICIVC 2023).
+
+  \item \textbf{Panoramic Sky Segmentation (SkyCloud360)} --- Extended sky/cloud
+    segmentation to equirectangular 360\textdegree{} imagery; created a 600-image panoramic
+    dataset with addressing of projection distortions (IEEE ICIVC 2025).
+
+  \item \textbf{Weather-Robust Augmentation (AWARE)} --- Developed a three-pipeline
+    benchmark framework (SWIFT, PRISM, PROVE) evaluating 25 augmentation strategies
+    for weather robustness; generated the AWACS dataset (71\,400 images)
+    (IEEE Access, under review 2025).
+\end{enumerate}
+
+\subsection*{Collaborative Research}
+
+\noindent
+In addition to the core dissertation work, I contributed to collaborative research
+within the VWDG group on:
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Avatar and Agent Realism} --- Behavioural realism of animated avatars in
+    AR and VR environments, including single-point IK animation and full-body
+    motion capture comparisons (IEEE VR 2024, Int.\@ Conf.\@ Cyberworlds 2024,
+    The Visual Computer 2025).
+  \item \textbf{AR Communication Systems} --- User studies with older adults using
+    wearable AR communication systems (ACM IMX 2024, ITAP/HCII 2025).
+  \item \textbf{Gaze and Audiovisual Coherence} --- Analysis of gaze behaviour and
+    effects of visual realism and audio presentation in AR storytelling
+    (ACM ETRA 2024, IEEE VR 2024).
+  \item \textbf{Systematic Reviews} --- Co-authored a systematic review on avatar and
+    agent visualisation in HMD-based AR \& VR (IEEE TVCG 2023).
+  \item \textbf{Telepresence Quality} --- Impact of partner representation
+    (robot, avatar, human) on communication experience (ACM CSCW 2025).
+\end{itemize}
+
+\subsection*{Open-Source Contributions \& Datasets}
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{AWARE Framework}: SWIFT + PRISM + PROVE pipelines
+    (\url{https://carhartt21.github.io/AWARE})
+  \item \textbf{AWACS Dataset}: 71\,400 weather-augmented images
+  \item \textbf{SkyCloud360}: 600 equirectangular images
+    (\url{https://github.com/carhartt21/SkyCloud360})
+  \item \textbf{SkyCloudNet}: Sky/cloud segmentation models
+    (\url{https://github.com/carhartt21/SkyCloudNet})
+  \item \textbf{OUTSIDE15k}: 15\,000 images, 24 classes
+    (\url{https://github.com/carhartt21/outsideNet})
+  \item \textbf{360\textdegree{} Detection}: 2\,500 panoramic images, 81 sign classes
+    (\url{https://github.com/carhartt21/360-Object-Detection})
+\end{itemize}
+
+% ==============================================================================
+\section*{Conference Presentations}
+% ==============================================================================
+
+\begin{enumerate}[nosep, leftmargin=1.5em, itemsep=4pt]
+  \item \textbf{Oral Presentation}: ``SkyCloud360: Sky and Cloud Segmentation in
+    Equirectangular Images,'' 10th Int.\@ Conf.\@ Image, Vision and Computing (ICIVC),
+    Chengdu, China, June 2025.
+
+  \item \textbf{Oral Presentation}: ``SkyCloud: Neural Network-Based Sky and Cloud
+    Segmentation from Natural Images,'' 8th Int.\@ Conf.\@ Image, Vision and Computing
+    (ICIVC), Dalian, China, August 2023.
+
+  \item \textbf{Oral Presentation}: ``OUTSIDE: Multi-Scale Semantic Segmentation of
+    Universal Outdoor Scenes,'' IEEE 23rd Int.\@ Workshop Multimedia Signal Processing
+    (MMSP), Tampere, Finland, October 2021.
+
+  \item \textbf{Oral Presentation}: ``Neural Network-Based Traffic Sign Recognition in
+    360\textdegree{} Images for Semi-Automatic Road Maintenance Inventory,'' IEEE 23rd Int.\@
+    Conf.\@ Intelligent Transportation Systems (ITSC), virtual, September 2020.
+\end{enumerate}
+
+% ==============================================================================
+\section*{Teaching Activities}
+% ==============================================================================
+
+\subsection*{Courses (Teaching Assistant)}
+
+\noindent\begin{tabularx}{\textwidth}{@{}p{3.5cm}L@{}}
+\textbf{WS 2019--2025} & \textbf{Virtual and Augmented Reality}\\
+ & Technische Universit\"at Ilmenau\\
+ & Practical sessions on VR/AR fundamentals, 3D rendering, tracking systems,
+   and immersive interaction design. Student project mentoring and grading.\\[6pt]
+\textbf{SS 2020--2025} & \textbf{Virtuelle Welten}\\
+ & Technische Universit\"at Ilmenau\\
+ & Practical sessions on virtual worlds, real-time rendering, game engine
+   development, and 3D modelling. Semester project supervision.\\[6pt]
+\textbf{Ongoing} & \textbf{Computer Vision \& Deep Learning Seminars}\\
+ & Technische Universit\"at Ilmenau\\
+ & Seminar supervision on semantic segmentation, object detection, weather-robust
+   perception, and neural network architectures.\\
+\end{tabularx}
+
+\subsection*{Thesis Supervision}
+
+\noindent
+Co-supervision of 4+ Bachelor's and Master's theses (2020--present) in the areas of:
+
+\begin{itemize}[nosep, leftmargin=1.5em]
+  \item Semantic segmentation for outdoor environments
+  \item Weather-robust perception and data augmentation
+  \item Panoramic and 360\textdegree{} image analysis
+  \item Avatar rendering and VR/AR applications
+\end{itemize}
+
+% ==============================================================================
+\section*{Funding}
+% ==============================================================================
+
+\cvline{2019 -- 2024}{Research funded by the \textbf{Free State of Thuringia}
+  (Grant No.\@ 2017\,FE\,9147), co-financed by the European Union under the
+  European Regional Development Fund (ERDF). Project focus: intelligent road
+  infrastructure analysis using neural networks and 360\textdegree{} imagery.}
+
+% ==============================================================================
+\section*{Industry Collaboration}
+% ==============================================================================
+
+\cvline{2019 -- 2022}{Collaboration with \textbf{NOVASIB GmbH} on the integration of
+  neural-network-based traffic sign detection into the TT-SIB INFOSYS\textregistered{}
+  road maintenance inventory management system, enabling semi-automatic
+  road infrastructure assessment from 360\textdegree{} panoramic imagery.}
+
+% ==============================================================================
+\section*{Technical Skills}
+% ==============================================================================
+
+\cvline{Programming}{Python, C/C++/C\#, Java, MATLAB/Octave, SQL, Bash, \LaTeX}
+\cvline{ML \& DL}{PyTorch, TensorFlow/Keras, scikit-learn, OpenCV, ONNX, Albumentations, timm}
+\cvline{Infrastructure}{Git, Docker, Linux, Slurm HPC, Weights~\&~Biases, Jupyter, CI/CD}
+\cvline{Domains}{Semantic Segmentation, Object Detection, Data Augmentation, 360\textdegree{} Vision, VR/AR}
+
+% ==============================================================================
+\section*{Languages}
+% ==============================================================================
+
+\cvline{German}{Native speaker}
+\cvline{English}{Fluent (C1+) --- academic writing, conference presentations}
+\cvline{French}{Basic knowledge (A2)}
+\cvline{Serbian}{Basic knowledge (A2)}
+
+% ==============================================================================
+\section*{Certifications}
+% ==============================================================================
+
+\cvline{2023}{C-Lizenz (DFB Football Coaching License)}
+\cvline{2023}{EU Remote Pilot Certificate (A1/A3) --- Drone operation, EU Reg.\@ 2019/947}
+
+% ==============================================================================
+\section*{Academic Service}
+% ==============================================================================
+
+\cvline{Reviewing}{Ad-hoc reviewer for IEEE and ACM conferences}
+
+% ==============================================================================
+
+\vfill
+\begin{flushright}
+  \small Ilmenau, \today
+\end{flushright}
+
+\end{document}
