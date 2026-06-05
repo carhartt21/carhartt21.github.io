@@ -19,6 +19,7 @@ Paper: https://ieeexplore.ieee.org/document/9733652
 Code and dataset: https://github.com/carhartt21/outsideNet 
 
 ## AWARE: 
+DOI: https://doi.org/10.1109/ACCESS.2026.3699854
 Project: https://carhartt21.github.io/AWARE
 Repositories: 
     SWIFT: https://github.com/carhartt21/SWIFT
