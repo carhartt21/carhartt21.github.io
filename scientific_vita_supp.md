@@ -1,0 +1,47 @@
+## Teaching
+
+- Seminars:
+    - WS 25/26: Game Development
+    - SS 26: Virtual and Augmented Reality
+- Master thesis:
+    - Zamam Mirza: Synthetic Data Generation for Semantic Segmentation and Object Detection Using Generative Models
+    - Syed Ajaz Zaidi: Enhancing Digital Reading with Gaze-Triggered Audio Cues and Audiobook Listening with Augmented Sound Effects
+- Student Projects:
+    - Research Projects
+        - SS 24
+            - Generative Models for Data Augmentation
+        - WS 24/25
+            - Mimic Synthesis for 3D Avatars using Gaze and Audio
+            - Automatic non-reference quality assessment for artificially generated images
+            - Coss-Domain Image-to-Image Translation for Low-Light Image Enhancement
+            - 3D Avatar Generation from Monocular Video
+            - Guided Image Generation Using Stable Diffusion Models
+            - Realistic Hair Generation for 3D Avatars using Deep Learning
+        - SS 25
+            - Data Augmentation in Adverse Outdoor Conditions using Simulator Data
+            - Utilizing Simulator-Generated Data for Enhanced Model Training
+            - Non-reference quality assessment for synthetic images
+        - WS 25/26
+            - Non-reference quality assessment for generated images
+            - Large Tutoring Models
+            - Egocentric Video Pretraining for XR Assistants
+            - LLM-Driven Facial Animations for Avatars
+        - SS 26
+            - Image-to-Image Translation in Equirectangular/360° Images
+- 
+
+## Reviewer Activities
+- ACM Multimedia 2026
+    - 
+- IEEE Transactions on Visualization and Computer Graphics:
+    - Towards Privacy-preserving Photorealistic Self-avatars in Mixed Reality
+- IEEE Access:
+    - Embodiment and Presence in Virtual Reality: The Role of Self-Similarity in High-Fidelity 3D Avatars
+- IEEE Open Journal of Signal Processing:
+    - Unsupervised Angularly Consistent 4D Light Field Segmentation using Hyperpixels and a Graph Neural Network
+- 2025 IEEE International Symposium on Mixed and Augmented Reality (ISMAR):
+    - Taking Language Embedded 3D Gaussian Splatting into the Wild
+- 2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR):
+    - Exploring Device-Oriented Video Encryption for Hierarchical Privacy Protection in AR Content Sharing
+    - HOIMotion: Forecasting Human Motion During Human-Object Interactions Using Egocentric 3D Object Bounding Boxes
+    - Comparative Analysis of AR-Based and Traditional Approaches in English Pronunciation Teaching: Efficacy, Engagement, and Implementation
